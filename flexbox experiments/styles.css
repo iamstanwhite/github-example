@@ -1,0 +1,36 @@
+/* make parent elelemt a flex container */
+
+ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+li {
+    width: 100px;
+    height: 100px;
+    background-color: #e54646;
+    margin: 8px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 44px;
+    text-align: center;
+    color: #eee;
+}
+
+/*select fist li element within the ul */
+
+li:nth-child(1) {
+    order: 2;
+}
+
+li:nth-child(6) {
+    order: 1;
+}
+
+li:nth-child(7) {
+    order: -1;
+}
